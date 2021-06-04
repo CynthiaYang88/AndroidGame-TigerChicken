@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#704CAF50"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_humanChoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="61dp"
+        android:text="@string/HumanChoice"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="140dp" />
+
+    <ImageView
+        android:id="@+id/iv_HumanChoice"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/tv_humanChoice"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/image_human_choice"
+        app:srcCompat="@drawable/chicken" />
+
+    <TextView
+        android:id="@+id/tv_ComputerChoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_HumanChoice"
+        android:layout_centerHorizontal="true"
+        android:text="@string/ComputerChoice"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="117dp"
+        tools:layout_editor_absoluteY="404dp" />
+
+
+    <ImageView
+        android:id="@+id/iv_ComputerChoice"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/tv_ComputerChoice"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/image_computer_choice"
+        app:srcCompat="@drawable/chicken"
+        tools:layout_editor_absoluteX="140dp" />
+
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_ComputerChoice"
+        android:layout_centerHorizontal="true"
+        android:text="@string/Score"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="73dp" />
+
+    <Button
+        android:id="@+id/b_tiger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_score"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="61dp"
+        android:clickable="true"
+        android:text="@string/Tiger"
+        app:backgroundTint="#A58A6D" />
+
+    <Button
+        android:id="@+id/b_chicken"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_score"
+        android:layout_marginTop="61dp"
+        android:layout_toEndOf="@id/b_tiger"
+        android:layout_toRightOf="@id/b_tiger"
+        android:clickable="true"
+        android:text="@string/Chicken"
+        app:backgroundTint="#A58A6D" />
+
+    <Button
+        android:id="@+id/b_bug"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_score"
+        android:layout_marginTop="61dp"
+        android:layout_toEndOf="@id/b_chicken"
+        android:layout_toRightOf="@id/b_chicken"
+        android:clickable="true"
+        android:text="@string/Bug"
+        app:backgroundTint="#A58A6D" />
+
+    <Button
+        android:id="@+id/b_stick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_score"
+        android:layout_marginTop="61dp"
+        android:layout_toRightOf="@id/b_bug"
+        android:clickable="true"
+        android:text="@string/Stick"
+        app:backgroundTint="#A58A6D" />
+
+</android.widget.RelativeLayout>
